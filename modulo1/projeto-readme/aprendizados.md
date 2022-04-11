@@ -1,0 +1,2 @@
+# Aprendizado da semana
+Durante a semana conhecemos um pouco mais sobre a história e parte técinica do computador, através das aulas, pesquisas e exercícios. Coemçamos a utilizar o terminal para realizar ações que antes só eram feitas com auxílio da **interface gráfica**, como a navegação entre os diretórios, criação de diretório e arquivos, entre outros. Aprendemos também um pouco da história, diferença entre **repositórios locais** e **repositórios remotos**, assim como as suas funções e comandos para a melhor utilização.    

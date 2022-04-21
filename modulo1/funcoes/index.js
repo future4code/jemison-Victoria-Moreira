@@ -58,7 +58,7 @@ let imprimirMensagem = (mensagem) => {
 
 imprimirMensagem("Eu não vou desistir!")
 
-// 3-
+// 3 -
 let operacoesBasicas = () => {
     let numero1 = Number(prompt("Insira um número."));
     let numero2 = Number(prompt("Insira mais um número.")); 

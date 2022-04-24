@@ -97,49 +97,57 @@ function retornaPrimeiroElemento(array) {
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   // implemente sua lógica aqui
-  //array.splice(array - 1, 1)
+ 
   let quantidadeElementos = array.length
-  let ultimoElemento = array.chartAt(quantidadeElementos -1) 
-  
-  return ultimoElemento
+  return array [quantidadeElementos - 1]
 }
 
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
+  let ultimoIndice = array.length - 1
+  let primeiroIndice = array.shift()
+  let ultimoItem = array.pop()
 
+  array.splice(0, 0, ultimoItem);
+  array.splice(ultimoIndice, 0, primeiroIndice)
+
+  return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
-  let resposta = string1.toLowerCase() === string2.toLowerCase()
+  primeiraString = string1.toLowerCase()
+  segundaString = string2.toLowerCase()
+  let resposta = primeiraString === segundaString
 
-  return resposta
+  console.log(resposta)
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
   // implemente sua lógica aqui
-  const anoAtual = Number(prompt("Em qual ano estamos?"))
-  const anoNascimento = Number(prompt("Em qual ano você nasceu?"))
-  const emissaoID = Number(prompt("Em qual ano seu RG foi emitido?"))
+  // const anoAtual = Number(prompt("Em qual ano estamos?"))
+  // const anoNascimento = Number(prompt("Em qual ano você nasceu?"))
+  // const emissaoID = Number(prompt("Em qual ano seu RG foi emitido?"))
   
-  let idade = anoAtual - anoNascimento
+  // let idade = anoAtual - anoNascimento
 
-  function renovarRG (idade <= 20) {
+  // function renovarRG (idade <= 20) {
 
   }
-}
+
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
-  const multiplo400 = ano % 400
-  const multiplo4 = ano % 4
-  const multiplo100 = ano % 100
 
-  return (multiplo400 === 0 || multiplo100 === 0 && multiplo4 === 0)
+  // const multiplo400 = ano % 400
+  // const multiplo4 = ano % 4
+  // const multiplo100 = ano % 100
+
+  // return (multiplo400 === 0 || multiplo100 === 0 && multiplo4 === 0)
 
 }
 

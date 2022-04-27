@@ -122,33 +122,36 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
   segundaString = string2.toLowerCase()
   let resposta = primeiraString === segundaString
 
-  console.log(resposta)
+  return resposta
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
-  // const anoAtual = Number(prompt("Em qual ano estamos?"))
-  // const anoNascimento = Number(prompt("Em qual ano você nasceu?"))
-  // const emissaoID = Number(prompt("Em qual ano seu RG foi emitido?"))
+ // implemente sua lógica aqui
+  const anoAtual = Number(prompt("Em qual ano estamos?"))
+  const anoNascimento = Number(prompt("Em qual ano você nasceu?"))
+  const ultimaEmissaoID = Number(prompt("Qual ano seu RG foi emitido?"))
   
-  // let idade = anoAtual - anoNascimento
-
-  // function renovarRG (idade <= 20) {
-
-  }
+  let idade = anoAtual - anoNascimento
+  let tempoDeCarteira = anoAtual - ultimaEmissaoID
+  
+  let primeiraCondicao = (idade <= 20 && tempoDeCarteira >= 5)
+  let segundaCondicao = (idade > 20 && idade <= 50 && tempoDeCarteira >= 10)
+  let terceiraCondicao = (idade > 50 && tempoDeCarteira >= 15)
+  
+  console.log(primeiraCondicao || segundaCondicao || terceiraCondicao)
+}
 
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
   // implemente sua lógica aqui
 
-  // const multiplo400 = ano % 400
-  // const multiplo4 = ano % 4
-  // const multiplo100 = ano % 100
+  const multiplo400 = ano % 400
+  const multiplo4 = ano % 4
+  const multiplo100 = ano % 100
 
-  // return (multiplo400 === 0 || multiplo100 === 0 && multiplo4 === 0)
-
+  return (multiplo400 === 0 || multiplo4 === 0 && multiplo100 !== 0)
 }
 
 // EXERCÍCIO 15

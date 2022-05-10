@@ -11,14 +11,14 @@ function retornaTamanhoArray(array) {
 }
 retornaTamanhoArray
 
-// EXERCÍCIO 02
+// EXERCÍCIO 02 **
 // Escreva uma função que recebe um array como parâmetro e retorne este array invertido. 
 function retornaArrayInvertido(array) {
   return array.reverse()
 }
 retornaArrayInvertido
 
-// EXERCÍCIO 03
+// EXERCÍCIO 03 **
 // Escreva uma função que recebe um array de números e retorne o array com os números em ordem crescente. 
 function retornaArrayOrdenado(array) {
   
@@ -26,7 +26,7 @@ function retornaArrayOrdenado(array) {
 }
 retornaArrayOrdenado
 
-// EXERCÍCIO 04
+// EXERCÍCIO 04 **
 // Escreva uma função que receba um array de números e retorne um novo array com apenas os números pares desse array de entrada.
 function retornaNumerosPares(array) {
     return array.filter((item, index) => item % 2 === 0)
@@ -53,8 +53,33 @@ function retornaMaiorNumero(array) {
 retornaMaiorNumero
 
 // EXERCÍCIO 07
-function retornaObjetoEntreDoisNumeros(num1, num2) {
+// Escreva uma função que, dados dois números, retorne um objeto com as seguintes propriedades:
 
+// - `maiorNumero` → contém o maior número
+// - `maiorDivisivelPorMenor` → booleano indicando se o maior é divisível pelo menor
+// - `diferenca` → contém a diferença entre eles (deve ser um **número positivo** sempre)
+
+// ⚠️ Obs: para os testes funcionarem, as propriedades do objeto devem possuir os exatos nomes acima
+
+function retornaObjetoEntreDoisNumeros(num1, num2) {
+  let maiorNumero
+  let maiorDivisivelPorMenor
+  let diferenca
+  if (num1 > num2){
+    maiorNumero = num1
+    maiorDivisivelPorMenor = num1 % num2 === 0
+    diferenca = num1 - num2
+  } else {
+    maiorNumero = num2
+    maiorDivisivelPorMenor = num2 % num1 === 0
+    diferenca = num2 - num1
+  }
+  const objeto = {
+    maiorNumero: maiorNumero,
+    maiorDivisivelPorMenor: maiorDivisivelPorMenor,
+    diferenca: diferenca
+  }
+  return objeto
 }
 
 // EXERCÍCIO 08

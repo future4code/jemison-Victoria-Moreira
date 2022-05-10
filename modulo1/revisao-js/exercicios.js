@@ -12,9 +12,11 @@ function retornaTamanhoArray(array) {
 console.log(retornaTamanhoArray)
 
 // EXERCÍCIO 02
+// Escreva uma função que recebe um array como parâmetro e retorne este array invertido. 
 function retornaArrayInvertido(array) {
-  
+  return array.reverse()
 }
+console.log(retornaArrayInvertido)
 
 // EXERCÍCIO 03
 function retornaArrayOrdenado(array) {

@@ -19,9 +19,12 @@ function retornaArrayInvertido(array) {
 console.log(retornaArrayInvertido)
 
 // EXERCÍCIO 03
+// Escreva uma função que recebe um array de números e retorne o array com os números em ordem crescente. 
 function retornaArrayOrdenado(array) {
   
+  return array.sort((a, b) => a-b)
 }
+console.log(retornaArrayOrdenado)
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {

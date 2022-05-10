@@ -9,14 +9,14 @@
 function retornaTamanhoArray(array) {
    return array.length
 }
-console.log(retornaTamanhoArray)
+retornaTamanhoArray
 
 // EXERCÍCIO 02
 // Escreva uma função que recebe um array como parâmetro e retorne este array invertido. 
 function retornaArrayInvertido(array) {
   return array.reverse()
 }
-console.log(retornaArrayInvertido)
+retornaArrayInvertido
 
 // EXERCÍCIO 03
 // Escreva uma função que recebe um array de números e retorne o array com os números em ordem crescente. 
@@ -24,12 +24,15 @@ function retornaArrayOrdenado(array) {
   
   return array.sort((a, b) => a-b)
 }
-console.log(retornaArrayOrdenado)
+retornaArrayOrdenado
 
 // EXERCÍCIO 04
+// Escreva uma função que receba um array de números e retorne um novo array com apenas os números pares desse array de entrada.
 function retornaNumerosPares(array) {
-  
+    
+    //return 
 }
+//console.log(retornaNumerosPares)
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
@@ -37,9 +40,17 @@ function retornaNumerosParesElevadosADois(array) {
 }
 
 // EXERCÍCIO 06
+// Escreva uma função que receba um array de números e retorne o maior número dele.
 function retornaMaiorNumero(array) {
-  
+    let maior = -Infinity
+  for (let i=0; i < array.length; i++){
+      if(array[i]> maior){
+        maior = array[i]
+      }
+  }
+  return maior
 }
+retornaMaiorNumero
 
 // EXERCÍCIO 07
 function retornaObjetoEntreDoisNumeros(num1, num2) {

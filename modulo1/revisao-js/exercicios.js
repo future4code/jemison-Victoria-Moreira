@@ -29,10 +29,9 @@ retornaArrayOrdenado
 // EXERCÍCIO 04
 // Escreva uma função que receba um array de números e retorne um novo array com apenas os números pares desse array de entrada.
 function retornaNumerosPares(array) {
-    
-    //return 
+    return array.filter((item, index) => item % 2 === 0)
 }
-//console.log(retornaNumerosPares)
+retornaNumerosPares
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {

@@ -35,8 +35,9 @@ retornaNumerosPares
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+  return array.filter((item, index) => item % 2 === 0).map ((item, index) => item ** 2)
 }
+retornaNumerosParesElevadosADois
 
 // EXERCÍCIO 06
 // Escreva uma função que receba um array de números e retorne o maior número dele.

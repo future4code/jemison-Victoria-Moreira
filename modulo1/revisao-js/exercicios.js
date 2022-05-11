@@ -96,8 +96,20 @@ function retornaNPrimeirosPares(n) {
  console.log(retornaNPrimeirosPares)
 
 // EXERCÍCIO 09
+// Faça uma função que receba como parâmetro os tamanhos dos três lados do triângulo: ladoA, ladoB, ladoC e retorne se ele é equilátero, isósceles ou escaleno (não é necessário validar se os lados fecham um triângulo).
+
 function classificaTriangulo(ladoA, ladoB, ladoC) {
 
+let classificacaoTriangulo
+
+ if (ladoA === ladoB && ladoA === ladoC) {
+  classificacaoTriangulo = "Equilátero"
+ } else if (ladoA !== ladoB && ladoB !== ladoC && ladoA !== ladoC) {
+  classificacaoTriangulo = "Escaleno"
+ } else {
+  classificacaoTriangulo = "Isósceles"
+ }
+ return classificacaoTriangulo
 }
 
 // EXERCÍCIO 10

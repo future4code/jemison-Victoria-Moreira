@@ -83,9 +83,17 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
 }
 
 // EXERCÍCIO 08
+// Escreva uma função que, recebendo um número N como parâmetro, retorne os N primeiros números pares.
+
 function retornaNPrimeirosPares(n) {
-   
-}
+  let numerosPares = []
+  for (let numeroParaVerificar = 0; numerosPares.length < n; numeroParaVerificar ++) {
+     if (numeroParaVerificar % 2 === 0) {
+      numerosPares.push(numeroParaVerificar)
+    } 
+  } return numerosPares
+ } 
+ console.log(retornaNPrimeirosPares)
 
 // EXERCÍCIO 09
 function classificaTriangulo(ladoA, ladoB, ladoC) {

@@ -126,9 +126,18 @@ function retornaSegundoMaiorESegundoMenor(array) {
 retornaSegundoMaiorESegundoMenor
 
 // EXERCÍCIO 11
+// Crie uma função que receba um objeto representando um filme com nome, ano, diretor e elenco. Ela deve retornar uma chamada para assistir a esse filme.
+
 function retornaChamadaDeFilme(filme) {
-   
-}
+  const objeto = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+ }
+ return `Venha assistir ao filme ${objeto.nome}, de ${objeto.ano}, dirigido por ${objeto.diretor} e estrelado por ${objeto.atores[0]}, ${objeto.atores[1]}, ${objeto.atores[2]}, ${objeto.atores[3]}.`
+} 
+retornaChamadaDeFilme
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {

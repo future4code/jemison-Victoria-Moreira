@@ -113,9 +113,17 @@ let classificacaoTriangulo
 }
 
 // EXERCÍCIO 10
+// Escreva uma função que receba um array de números e retorne um novo array com apenas 2 valores (NESTA ORDEM): o segundo maior e o segundo menor número do array original. 
+
 function retornaSegundoMaiorESegundoMenor(array) {
   
-}
+  let novoArray = array.sort((a, b) => a-b)
+  let segundoMenorValor = novoArray[1]
+  let segundoMaiorValor = novoArray[novoArray.length - 2]
+
+  return [segundoMaiorValor, segundoMenorValor]
+} 
+retornaSegundoMaiorESegundoMenor
 
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {

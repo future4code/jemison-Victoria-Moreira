@@ -140,9 +140,17 @@ function retornaChamadaDeFilme(filme) {
 retornaChamadaDeFilme
 
 // EXERCÍCIO 12
+// Crie uma função que recebe um objeto com as propriedades nome, idade, endereco e email  e retorne um novo objeto com as mesmas propriedades, mas com o valor "ANÔNIMO" para a propriedade nome. 
+
 function retornaPessoaAnonimizada(pessoa) {
-   
+  
+  let novoCadastro = {
+    ...pessoa,
+    nome: `ANÔNIMO`
+  }
+  return novoCadastro
 }
+retornaPessoaAnonimizada
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {

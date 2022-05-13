@@ -153,13 +153,28 @@ function retornaPessoaAnonimizada(pessoa) {
 retornaPessoaAnonimizada
 
 // EXERCÍCIO 13A
+// Imagine que você trabalhe num parque de diversões, como pessoa desenvolvedora. As suas tarefas são sempre com o intuito de ajudar a automação de alguns processos internos do parque. Uma das atrações principais dele é a montanha russa do terror. As filas são muito grandes e todas as pessoas de várias idades insistem entrar no brinquedo, mesmo sabendo que não podem. As regras para entrar na montanha russa do terror são: 
+// - Ter, no mínimo, 1.5m de altura;
+// - Ser mais velho do que 14 anos e
+// - Ser mais novo do que 60 anos.
+
+// Dados esses requisitos, escreva:
+
+// A) uma função que receba um array e devolva outro contendo as pessoas que tem permissão para entrar no brinquedo
+
 function retornaPessoasAutorizadas(pessoas) {
-   
-}
+  return pessoas.filter ((item) => {
+    return ((item.idade > 14) && (item.idade < 60) && (item.altura > 1.5))
+  })
+} retornaPessoasAutorizadas
+
+// B) uma função que receba um array e devolva outro contendo as pessoas que não tem permissão para entrar no brinquedo
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+  return pessoas.filter ((item) => {
+    return ((item.idade <= 14) || (item.idade >= 60) || (item.altura <= 1.5))
+  })
 }
 
 // EXERCÍCIO 14

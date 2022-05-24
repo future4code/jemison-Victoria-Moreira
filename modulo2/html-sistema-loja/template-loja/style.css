@@ -1,0 +1,28 @@
+
+header {
+    text-align: center;
+}
+
+body {
+    background-color: #807970;
+    color: #F3EAE8;
+    font-size: 170%;
+    text-align: justify;
+    text-indent: 50px;  
+}
+
+main{
+    margin: 30px;  
+}
+
+#barra-menu {
+    display: block;
+    margin: none;
+    background-color: #F3EAE8;;
+    padding: 10px; 
+}
+
+footer{
+    text-align: end;
+    padding: 0px 20px 20px 0px;
+}

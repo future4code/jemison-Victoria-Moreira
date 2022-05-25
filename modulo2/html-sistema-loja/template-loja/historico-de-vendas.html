@@ -21,34 +21,63 @@
         <a href="historico-de-vendas.html">Histórico de Vendas</a>
     </nav>
 
-    <div id="box-add-produto">
-        <h2 class="adc-produto-formulario">Adicionar Produto</h2>
-    <form class="adc-produto-formulario" action="#">
-            <label for="link-foto">Link para foto: </label>
-            <input type="url" id="link-foto" name="link-foto">
-            <br>
-     
-            <label for="descricao">Descrição do produto: </label>
-            <!-- Adicione o id apropriado para o input abaixo -->
-            <input type="text" id="descricao" name="descricao">
-            <br>
+    <h3>Histórico de Vendas</h3>
 
-            <label for="preco">Preço (em R$): </label>
-            <!-- Adicione o id apropriado e o type para receber números abaixo -->
-            <input type="number" id="preco" name="preco">
-            <br>
+    <table>
+        <tr>
+            <th>Ítem</th>
+            <th>Quantidade</th>
+            <th>Preço (R$)</th>
+            <th>Forma de Pagamento</th>
+            <th>Horário</th>
+            <th>Data</th>
+        </tr>
 
-            <!-- Preencha as propriedades necessárias para os elementos abaixo -->
-            <label for="quantidadeDisponivel">Quantidade disponível: </label>
-            <input type="number" id="quantidadeDisponivel" name="quantidadeDisponivel">
-            <br>
+        <tr>
+            <td> Capacete Happy Dreams </td>
+            <td> <input type="number"> </td>
+            <td> R$630,00 </td>
+            <td> <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <input type="radio" name="pagamento" value="cartao"> Cartão </td>
+            <td> <input type="time"> </td>
+            <td> <input type="date"> </td>
+        </tr>
 
-            <!-- Adicione ao type do botão abaixo o valor para que ele submeta o formulário -->
-            <button type="submit">Adicionar</button>
+        <tr>
+            <td> Capacete Orion Free </td>
+            <td> <input type="number"> </td>
+            <td> R$499,90 </td>
+            <td> <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <input type="radio" name="pagamento" value="cartao"> Cartão </td>
+            <td> <input type="time"> </td>
+            <td> <input type="date"> </td>
+        </tr>
 
-    </form>
-    </div>
-    
+        <tr>
+            <td> Capacete Norisk Darth </td>
+            <td> <input type="number"> </td>
+            <td> R$750,00 </td>
+            <td> <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <input type="radio" name="pagamento" value="cartao"> Cartão </td>
+            <td> <input type="time"> </td>
+            <td> <input type="date"> </td>
+        </tr>
+
+        <tr>
+            <td> Capacete Bell Bullitt Solid Black </td>
+            <td> <input type="number"> </td>
+            <td> R$2100,00 </td>
+            <td> <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <input type="radio" name="pagamento" value="cartao"> Cartão </td>
+            <td> <input type="time"> </td>
+            <td> <input type="date"> </td>
+        </tr>
+
+        <tr>
+            <td> Capacete Venom Marvel </td>
+            <td> <input type="number"> </td>
+            <td> R$4580,00 </td>
+            <td> <input type="radio" name="pagamento" value="dinheiro"> Dinheiro <input type="radio" name="pagamento" value="cartao"> Cartão </td>
+            <td> <input type="time"> </td>
+            <td> <input type="date"> </td>
+        </tr>
+    </table>
 
 </body>
 </html>

@@ -1,4 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Source Code Pro', monospace;
 }
+
+/* CSS PAGINA PRINCIPAL */
+
+body {
+    background-color: black;
+
+}
+
+h2.name{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.sidebar{
+    position: fixed;
+    width: 280px;
+    height: 100%;
+    margin-top: 0px;
+    padding-top: 70px;
+    left: 0;
+    background: rgba(80, 114, 224, 0.438);
+}
+
+.sidebar .imagem-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 100px;
+}
+
+.sidebar a{
+    color: #fff;
+    display: block;
+    font-size:large;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: solid;
+    padding-left: 35px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    
+}
+
+.sidebar a:hover{
+    background: rgb(185, 137, 229);
+}
+
+.sidebar ion-icon{
+    padding-right: 10px;
+    padding-left: 0px;
+}
+

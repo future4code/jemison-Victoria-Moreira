@@ -9,7 +9,7 @@
 /* CSS PAGINA PRINCIPAL */
 
 body {
-    background-color: black;
+    background-color: #233262;
 
 }
 
@@ -33,7 +33,7 @@ header.menu{
     height: 200px;
     margin-top: 0px;
     padding: 20px 0 20px 0;
-    background-color: rgba(80, 114, 224, 0.438);
+    background-color: rgb(0, 0, 0);
 }
 
 .imagem-perfil{
@@ -84,38 +84,3 @@ div.menu a{
 }
 
 /* CSS BARRA DE MENU TERMINOU AQUI */
-
-.container{
-    height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-p.cabecalho{
-    width: 100%;
-    width: 31%;
-    margin-left: 20px;
-    margin-top: 20px;
-    display: inline-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 40px;
-    color: #fff;
-    background-color: rgb(185, 137, 229);
-}
-
-p.item{
-    display: inline-flex;
-    flex-direction: row;
-    text-align: justify;
-    justify-content: space-around;
-    text-indent: 1.5cm;
-    color:rgb(255, 255, 255);
-    width: 30%;
-    margin: 10px 20px 35px 20px;
-           
-}
-
-/* CSS PAGINA CONTATO */
-

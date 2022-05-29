@@ -92,7 +92,6 @@ div.menu a{
 }
 
 p.cabecalho{
-    width: 100%;
     width: 31%;
     margin-left: 20px;
     margin-top: 20px;
@@ -117,5 +116,12 @@ p.item{
            
 }
 
-/* CSS PAGINA CONTATO */
+/* CSS PAGINA MEUS PROJETOS */
+
+.projeto{
+    width: 300px;
+    height: 300px;
+    margin: 50px 30px;
+    border-radius: 50px;
+}
 

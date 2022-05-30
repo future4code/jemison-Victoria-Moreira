@@ -118,8 +118,13 @@ p.item{
 
 /* CSS PAGINA MEUS PROJETOS */
 
-section{
+section.projeto-impar{
     background-color: rgba(49, 49, 49, 0.377);
+    padding: 20px;
+}
+
+section.projeto-par{
+    padding: 20px;
 }
 
 .projeto{
@@ -138,7 +143,7 @@ ul{
 }
 
 li{
-    padding: 10px 100px 5px 5px;
+    padding: 10px 40px 5px 5px;
     text-align: justify;
     text-indent: 0.5cm;
     color: #fff;

@@ -13,6 +13,16 @@ body {
 
 }
 
+ul.skills > li{
+    display: block;
+    margin: 25px 10px 20px 30px;
+    list-style-type: none;
+    padding: 10px 40px 5px 5px;
+    text-align: justify;
+    text-indent: 1.5cm;
+    color: #fff;
+}
+
 /* CSS BARRA DE MENU COMECA AQUI */
 
 header.menu > h2.name{
@@ -104,7 +114,7 @@ p.cabecalho{
     background-color: rgb(185, 137, 229);
 }
 
-p.item{
+section.item{
     display: inline-flex;
     flex-direction: row;
     text-align: justify;
@@ -112,9 +122,15 @@ p.item{
     text-indent: 1.5cm;
     color:rgb(255, 255, 255);
     width: 30%;
-    margin: 10px 20px 35px 20px;
-           
+    height: 100%;
+    margin: 10px 20px 35px 20px;        
 }
+
+.licencas-certificados{
+    display:flex;
+    
+}
+
 
 /* CSS PAGINA MEUS PROJETOS */
 
@@ -136,16 +152,16 @@ section.projeto-par{
     border-radius: 50px;
 }
 
-ul{
+.nao-ordenada{
     display: inline;
     margin: 25px 10px 20px 30px;
     list-style-type: none;
 }
 
-li{
+ul.nao-ordenada > li{
     padding: 10px 40px 5px 5px;
     text-align: justify;
-    text-indent: 0.5cm;
+    text-indent: 1.5cm;
     color: #fff;
 }
 

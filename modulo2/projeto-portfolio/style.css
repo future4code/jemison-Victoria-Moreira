@@ -118,24 +118,32 @@ p.item{
 
 /* CSS PAGINA MEUS PROJETOS */
 
+section{
+    background-color: rgba(49, 49, 49, 0.377);
+}
+
 .projeto{
     display: inline;
     float: left;
     width: 300px;
     height: 300px;
-    margin: 50px 30px;
+    margin: 40px 30px;
     border-radius: 50px;
 }
 
 ul{
     display: inline;
-    margin: 15px 10px 0px 30px;
+    margin: 25px 10px 20px 30px;
     list-style-type: none;
 }
 
 li{
-    padding: 10px 100px 0px 5px;
+    padding: 10px 100px 5px 5px;
     text-align: justify;
     text-indent: 0.5cm;
     color: #fff;
+}
+
+span{
+    font-weight: bold;
 }

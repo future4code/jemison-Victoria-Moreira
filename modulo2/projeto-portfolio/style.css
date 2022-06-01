@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+}
+
+/* CSS PAGINA PRINCIPAL */
+
+body {
+    background-color: black;
+
+}
+
+ul.skills > li{
+    display: block;
+    margin: 25px 10px 20px 30px;
+    list-style-type: none;
+    padding: 10px 40px 5px 5px;
+    text-align: justify;
+    text-indent: 1.5cm;
+    color: #fff;
+}
+
+/* CSS BARRA DE MENU COMECA AQUI */
+
+header.menu > h2.name{
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    
+}
+
+h2.name > span{
+    color: rgb(185, 137, 229);
+}
+
+header.menu{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: 0px;
+    padding: 20px 0 20px 0;
+    background-color: rgba(80, 114, 224, 0.438);
+}
+
+.imagem-perfil{
+    width: 140px;
+    height: 140px;
+    border-radius: 100px;
+    margin-left: 40px;
+    margin: 0px 40px 0px 40px;
+}
+
+div.menu{
+    display:inline-flex;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.menu a{
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: smaller;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    margin: 15px 15px 15px 15px;
+    padding: 0px;
+    border-radius: 5px;
+    transition: 0.3s;  
+}
+
+.menu a:hover{
+    background: rgb(185, 137, 229);
+    border-radius: 10px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.menu ion-icon{
+    padding-right: 10px;
+    padding-left: 0px;
+}
+
+/* CSS BARRA DE MENU TERMINOU AQUI */
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+p.cabecalho{
+    width: 31%;
+    margin-left: 20px;
+    margin-top: 20px;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color: rgb(185, 137, 229);
+}
+
+section.item{
+    display: inline-flex;
+    flex-direction: row;
+    text-align: justify;
+    justify-content: space-around;
+    text-indent: 1.5cm;
+    color:rgb(255, 255, 255);
+    width: 30%;
+    height: 100%;
+    margin: 10px 20px 35px 20px;        
+}
+
+.licencas-certificados{
+    display:flex;
+    
+}
+
+
+/* CSS PAGINA MEUS PROJETOS */
+
+section.projeto-impar{
+    background-color: rgba(49, 49, 49, 0.377);
+    padding: 20px;
+}
+
+section.projeto-par{
+    padding: 20px;
+}
+
+.projeto{
+    display: inline;
+    float: left;
+    width: 300px;
+    height: 300px;
+    margin: 40px 30px;
+    border-radius: 50px;
+}
+
+.nao-ordenada{
+    display: inline;
+    margin: 25px 10px 20px 30px;
+    list-style-type: none;
+}
+
+ul.nao-ordenada > li{
+    padding: 10px 40px 5px 5px;
+    text-align: justify;
+    text-indent: 1.5cm;
+    color: #fff;
+}
+
+span{
+    font-weight: bold;
+}

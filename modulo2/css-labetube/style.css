@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    width: auto;
+    height: 15vh;
+    background-color: #EF843A;
+    justify-content: space-between;
+}
+
+.titulo, .busca{
+    display: flex;
+    align-items: center;
+}
+
+.titulo{
+    padding: 20px;
+}
+
+.busca{
+    justify-content: flex-end;
+    padding-right: 60px;      
+}
+
+#caixa-de-busca{
+    padding: 8px;
+}

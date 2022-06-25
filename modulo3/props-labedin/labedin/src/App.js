@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import CardGrande from './components/CardGrande/CardGrande';
+import CardPequeno from './components/CardPequeno/CardPequeno';
 import ImagemButton from './components/ImagemButton/ImagemButton';
 
 function App() {
@@ -9,9 +10,9 @@ function App() {
       <div className="page-section-container">
         <h2>Dados pessoais</h2>
         <CardGrande 
-          imagem="https://uploads-ssl.webflow.com/5d640f4558306be99cf47a0e/5dd57846babb597b77c6bb1d_PerfilFuture4_cor.png" 
+          imagem="https://media-exp1.licdn.com/dms/image/C5603AQG5EnnkqLfUYw/profile-displayphoto-shrink_200_200/0/1574717015676?e=1661385600&v=beta&t=uWa_9qMazm1U3C0R5WXObTLLe8PVfGaJph9MsWzok8k" 
           nome="Victoria Moreira" 
-          descricao="Olá, me chamo Victoria Moreira. Sou aluna Labenu, iniciante na carreira dev. Apaixonada por tecnologia, sou formada em Engenharia Elétrica, intrusa nas áreas de modelagem e desenho."
+          descricao="Olá, me chamo Victoria Moreira. Sou aluna Labenu, iniciante na carreira dev. Apaixonada por tecnologia, sou formada em Engenharia Elétrica, intrusa nas áreas de modelagem 3D e desenho."
         />
         
         <ImagemButton 
@@ -21,15 +22,31 @@ function App() {
       </div>
 
       <div className="page-section-container">
+        <CardPequeno 
+          imagem="https://cdn-icons-png.flaticon.com/512/1782/1782765.png"
+          nome="Email: " 
+          descricao="talk-to-me@outlook.com"          
+        />
+      </div>
+
+      <div className="page-section-container">
+        <CardPequeno 
+          imagem="https://img2.gratispng.com/20180830/bww/kisspng-the-daily-dot-internet-logo-online-newspaper-5b8824be044753.2560879215356489580175.jpg"
+          nome="Endereço:" 
+          descricao="Rua dos Bobos, número 0 - Rio de Janeiro"          
+        />
+      </div>
+
+      <div className="page-section-container">
         <h2>Experiências profissionais</h2>
         <CardGrande 
-          imagem="https://s3.amazonaws.com/future4.com.br/static/headf4-c492117ca2373dc85ca81bf715b3dc2a.png" 
+          imagem="https://portalfacilarquivos.blob.core.windows.net/uploads/CAMPOALEGREDELOURDES/imgOrig/%7BDE5BC0A3-5BDC-C25B-CCD4-DDDDBA7DA22E%7D.png" 
           nome="ACS - IBGE" 
           descricao="Realizar contratação de recenseadores, treinamento, acompanhamento e/ou suporte e supervisão dos questionários aplicados." 
         />
         
         <CardGrande 
-          imagem="https://logodownload.org/wp-content/uploads/2019/03/nasa-logo-0-768x768.png" 
+          imagem="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtt4MLGfdrSMw-UW6JmlM2QUe3BKOG7O8ZLjA4y0KTiMCsXGgD2-x9u16kE6L6moLA03s&usqp=CAU" 
           nome="Estagiária - TIM SA" 
           descricao="Análise de indicadores, controle de acesso e implantação de tecnologias de rede móvel 2G, 3G e 4G." 
         />

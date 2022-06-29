@@ -42,15 +42,24 @@ const PostPhoto = styled.img`
 
 function Post(props){
   
-  const [numeroCurtidas, setnumeroCurtidas] = useState (0)
+  const [numeroCurtidas, setnumeroCurtidas] = useState(0)
   const [curtido, setCurtido] = useState(false)
-  const [comentando, setComentando] = useState(false)
-  const [numeroComentarios, setNumeroComentarios] = useState(0)
 
   const onClickCurtida = () => {
+    if(numeroCurtidas === 0){
+      setCurtido (true)
+      setnumeroCurtidas (numeroCurtidas+1)
+    }else{
+      setCurtido (false)
+      setnumeroCurtidas (numeroCurtidas-1)
+    }
     console.log('Curtiu!')
   }
-  
+
+  const [comentando, setComentando] = useState(false)
+
+  const [numeroComentarios, setNumeroComentarios] = useState(0)
+
   const onClickComentario = () => {
     setComentando(!comentando)
     if(comentando) {

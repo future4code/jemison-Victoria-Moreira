@@ -9,29 +9,45 @@ const MainContainer = styled.div`
   align-items: center;
 `
 function App() {
+
+  const arrayDePostagens = [
+    {
+      nomeUsuario: "Júlia",
+      fotoUsuario: "https://picsum.photos/50/13",
+      fotoPost: "https://picsum.photos/210/150",
+    },
+
+    {
+      nomeUsuario: "Dani",
+      fotoUsuario: "https://picsum.photos/50/50",
+      fotoPost: "https://picsum.photos/210/180",
+    },
+
+    {
+      nomeUsuario: "Vanessa",
+      fotoUsuario: "https://picsum.photos/12/12",
+      fotoPost: "https://picsum.photos/230/150"
+    }    
+  ];  
+
+  const conteudoPost = arrayDePostagens.map((pessoa, index) =>{
+    return(
+      <Post key={index}
+        nomeUsuario= {pessoa.nomeUsuario}
+        fotoUsuario= {pessoa.fotoUsuario}
+        fotoPost= {pessoa.fotoPost}
+      />
+    )
+  })
+
+  console.log(conteudoPost)
+
 return(
   <MainContainer>
-          <Post
-            nomeUsuario={'Júlia'}
-            fotoUsuario={'https://picsum.photos/50/13'}
-            fotoPost={'https://picsum.photos/210/150'}
-          />
-
-          <Post
-            nomeUsuario={'Dani'}
-            fotoUsuario={'https://picsum.photos/50/50'}
-            fotoPost={'https://picsum.photos/220/150'}
-          />
-
-          <Post
-            nomeUsuario={'Vanessa'}
-            fotoUsuario={'https://picsum.photos/12/12'}
-            fotoPost={'https://picsum.photos/230/150'}
-          />
-        </MainContainer>
+    {conteudoPost}    
+  </MainContainer>
 )
 
 }
-
 
 export default App;

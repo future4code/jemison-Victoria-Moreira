@@ -39,7 +39,7 @@ const Form = styled.form`
     cursor: pointer;
     color: white;
     font-weight: bold;
-    background-color: #8831b7;
+    background-color: #b855ed;
   }
 `
 

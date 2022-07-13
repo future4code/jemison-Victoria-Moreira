@@ -9,8 +9,8 @@ export const DivFormulario = styled.div`
   background-color: #1fbaa5;
   height: 40vh;
   width: 30vw;
-  margin-top: 15vh;
   border-radius: 15px;
+  margin: 20vh 35vw 20vh 35vw;
 
   h1{
     font-size: 23px;

@@ -1,34 +1,22 @@
 import React from 'react'
-import {DivFormulario} from './style'
+import Agradecimentos from './components/Agradecimentos';
+import CursoSuperiorCompleto from './components/CursoSuperiorCompleto';
+import DadosGerais from './components/DadosGerais';
+import CursoSuperiorIncompleto from './components/CursoSuperiorIncompleto'
+
 
 
 function App() {
+  
   return (
-    <DivFormulario>
-      <h1>Etapa 1 - Dados Gerais</h1>
-      <label>
-        Nome:
-        <input type="text" placeholder="Insira seu nome"/>
-      </label>
-      <label>
-        Idade:
-        <input type="text" placeholder="Insira sua idade"/>
-      </label>
-      <label>
-        Email:
-        <input type="text" placeholder="Insira seu email"/>
-      </label>
-      <label>Grau de escolaridade:
-      <select>
-        <option value="EnsinoMedioIncompleto">Ensino Médio Incompleto</option>
-        <option value="EnsinoMedioCompleto">Ensino Médio Completo</option>
-        <option value="EnsinoSuperiorIncompleto">Ensino Superior Incompleto</option>
-        <option value="EnsinoSuperiorIncompleto">Ensino Superior Completo</option>
-      </select>
-      </label>
-      <input type="submit" value="Enviar"/>
-    </DivFormulario>
-  );
+    <div>
+      <DadosGerais/>
+      <CursoSuperiorCompleto/>
+      <CursoSuperiorIncompleto/>
+      <Agradecimentos/>
+    </div>
+    
+  )
 }
 
 export default App;

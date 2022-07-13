@@ -38,7 +38,12 @@ function CursoSuperiorIncompleto (props) {
       </label>
       <label>
         Fez algum curso complementar?
-        <input type="text" placeholder="Nome do curso"/>
+        <select>
+          <option value=" "></option>
+          <option value="CursoTecnico">Curso técnico</option>
+          <option value="CrusoDeIngles">Curso de inglês</option>
+          <option value="NaoFiz">Não fiz curso complementar</option>
+        </select>
       </label>
       <div>
         <span>

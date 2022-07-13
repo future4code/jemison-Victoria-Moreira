@@ -1,9 +1,32 @@
-import React from "react";
+import React, {useState} from "react";
 import {DivAgradecimentos} from '../style'
+import DadosGerais from "./DadosGerais";
+import CursoSuperiorIncompleto from "./CursoSuperiorIncompleto";
 
-function Agradecimentos () {
+function Agradecimentos (props) {
 
-  const tituloEncerramento = "O formulário acabou!"
+  const tituloEncerramento = "O formulário acabou!";
+
+  const [nav, setNav] = useState("")
+
+  const handleCursoSuperiorIncompleto = () => {
+    setNav("Voltar")
+  }
+
+  const handleDadosGerais = ()=> {
+    setNav("Finalizar")
+  }
+
+  switch(nav) {
+    case "Voltar":
+      return <CursoSuperiorIncompleto/>
+      break;
+    case "Finalizar":
+      return <DadosGerais/>
+      break;
+    default:
+      break;
+  }
 
   return (
     <DivAgradecimentos>
@@ -11,10 +34,10 @@ function Agradecimentos () {
       <p>Agradecemos sua participação.</p>
       <div>
         <span>
-          <input type="submit" value="Voltar"/>
+          <button onClick={handleCursoSuperiorIncompleto}>Voltar</button>
         </span>
         <span>
-          <input type="submit" value="Finalizar"/>
+          <button onClick={handleDadosGerais}>Finalizar</button>
         </span>
       </div>
     </DivAgradecimentos>

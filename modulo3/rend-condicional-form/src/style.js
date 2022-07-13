@@ -6,10 +6,10 @@ export const DivFormulario = styled.div`
   flex-direction: column;
   align-items: center;
   background-color: #1fbaa5;
-  height: 40vh;
+  height: 45vh;
   width: 30vw;
   border-radius: 15px;
-  margin: 20vh 35vw 20vh 35vw;
+  margin: 15vh 35vw 20vh 35vw;
 
   h1{
     font-size: 23px;

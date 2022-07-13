@@ -1,10 +1,34 @@
-import React from "react";
+import React, {useState} from "react";
 import {DivCursoSuperior} from '../style'
+import Agradecimentos from "./Agradecimentos";
+import CursoSuperiorCompleto from "./CursoSuperiorCompleto";
 
-function CursoSuperiorIncompleto () {
+
+function CursoSuperiorIncompleto (props) {
 
   const informacoesGerais = "Informações Gerais de Ensino"
   
+  const [nav, setNav] = useState("")
+
+  const handleCursoSuperiorCompleto = ()=> {
+    setNav("Voltar")
+  }
+
+  const handleAgradecimentos = () => {
+    setNav("Seguir")
+  }
+
+  switch(nav) {
+    case "Voltar":
+      return <CursoSuperiorCompleto/>
+      break;
+    case "Seguir":
+      return <Agradecimentos/>
+      break;
+    default:
+      break;
+  }
+
   return (
     <DivCursoSuperior>
       <h1>{informacoesGerais}</h1>
@@ -18,10 +42,10 @@ function CursoSuperiorIncompleto () {
       </label>
       <div>
         <span>
-          <input type="submit" value="Voltar"/>
+          <button onClick={handleCursoSuperiorCompleto}>Voltar</button>
         </span>
         <span>
-          <input type="submit" value="Próximo"/>
+          <button onClick={handleAgradecimentos}>Seguir</button>
         </span>
       </div>
     </DivCursoSuperior>

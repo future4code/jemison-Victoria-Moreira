@@ -1,9 +1,24 @@
-import React from "react";
+import React, {useState} from "react";
 import {DivFormulario} from '../style'
+import CursoSuperiorCompleto from "./CursoSuperiorCompleto";
 
-function DadosGerais () {
+function DadosGerais (props) {
 
   const titulo1 = "Dados Gerais"
+
+  const [nav, setNav] = useState("")
+
+  const handleCursoSuperiorCompleto = ()=> {
+    setNav("Enviar")
+  }
+
+  switch(nav) {
+    case "Enviar":
+      return <CursoSuperiorCompleto/>
+      break;
+    default:
+      break;
+  }
 
   return (
     <DivFormulario>
@@ -28,7 +43,7 @@ function DadosGerais () {
         <option value="EnsinoSuperiorIncompleto">Ensino Superior Completo</option>
       </select>
       </label>
-      <input type="submit" value="Enviar"/>
+      <button onClick={handleCursoSuperiorCompleto}>Enviar</button>
     </DivFormulario>
 
   )

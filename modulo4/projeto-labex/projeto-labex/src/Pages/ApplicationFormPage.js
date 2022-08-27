@@ -1,7 +1,20 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export function ApplicationFormPage() {
+export const ApplicationFormPage = () => {
+  const navigate = useNavigate()
+
+  const cancelApplication = () => {
+    navigate (-1)
+  }
+
+
   return (
-    <h1>Application Form Page</h1>
+    <div>
+      <h1>Application Form Page</h1>
+      <button onClick={cancelApplication}>Cancelar</button>
+      <button>Enviar</button>
+    </div>
+
   );
 }

@@ -1,7 +1,22 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 
-export function HomePage() {
+export const HomePage = () => {
+  const navigate = useNavigate()
+  
+  const goToListTripsPage = () => {
+    navigate ('/trips/list')
+  }
+
+  const goToLoginPage = () => {
+    navigate ('/login')
+  }
+
   return (
-    <h1>Home Page</h1>
+    <div>
+      <h1>Home Page</h1>
+      <button onClick={goToListTripsPage}>Lista de Viagens</button>
+      <button onClick={goToLoginPage}>Área Administrativa</button>
+    </div>
   );
 }

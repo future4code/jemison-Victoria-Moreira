@@ -4,7 +4,7 @@ import { HomePage } from './HomePage';
 import { ListTripsPage } from './ListTripsPage';
 import { ApplicationFormPage } from './ApplicationFormPage';
 import { LoginPage } from './LoginPage';
-import { AdminHomePage } from './AdminHomePage';
+import { AdminHomePage } from './AdminHomePage/AdminHomePage';
 import { TripDetailsPage } from './TripDetailsPage';
 import { CreateTripPage } from './CreateTripPage';
 

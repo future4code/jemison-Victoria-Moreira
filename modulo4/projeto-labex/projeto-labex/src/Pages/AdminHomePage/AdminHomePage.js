@@ -1,5 +1,7 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Container } from '../../GlobalStyled';
+import { Title, SectionsButtons, Button } from './styled';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const AdminHomePage = () => {
   const navigate = useNavigate()

@@ -1,4 +1,4 @@
-function comparaDoisNumeros(numero1: number, numero2: number) : any{
+function comparaDoisNumeros(numero1: number, numero2: number) : number{
   let maiorNumero:number;
   let menorNumero:number;
 

@@ -15,15 +15,6 @@ app.get("/", ( req:Request, res:Response) => {
     res.send("Hello from Express")
 })
 
-//2- Acesse a API do JSONPlaceholder e observe os endpoints que buscam usuários. No seu projeto, crie uma variável de tipo para representar esse recurso.
-
-type usuarios = {
-    id: number,
-    name: string,
-    phone:string,
-    email: string,
-    website:string 
-}
 
 
 app.listen(3003, () => {

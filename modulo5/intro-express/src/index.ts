@@ -2,6 +2,7 @@ import express, {Request, Response} from "express"
 
 import cors from 'cors'
 import { type } from "os"
+import { users } from "./data"
 
 const app = express()
 
@@ -15,7 +16,11 @@ app.get("/", ( req:Request, res:Response) => {
     res.send("Hello from Express")
 })
 
+//4- Construa um endpoint que retorne os usuários criados no exercício anterior.
 
+app.get("/users", (req:Request, res:Response) => {
+    res.status(200).send(users)
+})
 
 app.listen(3003, () => {
     console.log("Server is running in http://localhost:3003");

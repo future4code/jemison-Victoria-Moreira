@@ -1,6 +1,5 @@
 //3- Crie um array de usuários para servir como base de dados da nossa API.
 
-import { traceDeprecation } from "process";
 import { User } from "./types";
 
 
@@ -29,7 +28,7 @@ export const users: User[] = [
      {
         id: 4,
         name: "tadeu",
-        phone: "24128874"
+        phone: "24128874",
         email: "tad.franco@hotmail.com",
         website: "tad.franco.com"
      },

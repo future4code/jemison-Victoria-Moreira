@@ -9,3 +9,11 @@ export type User = {
   website:string 
 }
 
+//5- No seu projeto, crie uma variável (post) de tipo para representar esse recurso.
+
+export type Post = {
+  userId: number,
+  id: number,
+  title: string,
+  body: string  
+}

@@ -36,7 +36,7 @@ export const users: User[] = [
 //6- Crie um array de posts para incrementar a base de dados da nossa API.
 //r: Criado fora do array de usuários para facilitar a visualização e localização. 
 
-export const post: Post[] = [
+export const posts: Post[] = [
   {
       id: 1,
       userId: 2,

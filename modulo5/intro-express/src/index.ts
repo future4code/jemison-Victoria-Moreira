@@ -1,7 +1,7 @@
 import express, {Request, Response} from "express"
 
 import cors from 'cors'
-import { post, users } from "./data"
+import { posts, users } from "./data"
 
 const app = express()
 
@@ -23,7 +23,19 @@ app.get("/users", (req:Request, res:Response) => {
 
 //7- Construa um endpoint que retorne os posts criados no exercício anterior.
 
-app.get("/post", (req:Request, res:Response) => {
+app.get("/posts", (req:Request, res:Response) => {
+    res.status(200).send(posts)
+})
+
+//7- Construa um endpoint que retorne os posts de um usuário em particular.
+
+app.get("/posts/:userId", (req:Request, res:Response) => {
+    let user = Number(req.params.userId)
+
+    const post = posts.filter((post) => {
+        return post.userId == user
+    })
+
     res.status(200).send(post)
 })
 

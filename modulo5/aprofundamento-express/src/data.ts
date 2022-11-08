@@ -2,7 +2,7 @@ import { ToDoList } from "./type";
 
 //3- Crie um array de afazeres para servir como base de dados da nossa API e utilize a tipagem desenvolvida no exercício anterior.
 
-export const todolist: ToDoList[] = [
+export const list: ToDoList[] = [
   {
     userId: 0,
     id: 1,

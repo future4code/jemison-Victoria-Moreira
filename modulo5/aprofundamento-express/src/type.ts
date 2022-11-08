@@ -4,6 +4,6 @@
 export type ToDoList = {
   userId: number,
   id: number,
-  title: "string",
+  title: string,
   completed: boolean
 }

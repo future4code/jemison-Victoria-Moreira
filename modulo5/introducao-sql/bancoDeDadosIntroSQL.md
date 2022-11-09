@@ -15,7 +15,7 @@
 SHOW DATABASES; -- infroma o userName 
 SHOW TABLES; -- mostra as tabelas existentes
 
--- EXERCICIO C
+#### EXERCICIO C
 DESCRIBE Actor; -- descreve os campos, tipos de dados, predefinições,...
 
 ### EXERCICIO 2

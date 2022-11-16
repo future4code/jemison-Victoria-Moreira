@@ -27,7 +27,7 @@ app.get("/posts", (req:Request, res:Response) => {
     res.status(200).send(posts)
 })
 
-//7- Construa um endpoint que retorne os posts de um usuário em particular.
+//8- Construa um endpoint que retorne os posts de um usuário em particular.
 
 app.get("/posts/:userId", (req:Request, res:Response) => {
     let user = Number(req.params.userId)

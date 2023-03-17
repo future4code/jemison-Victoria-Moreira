@@ -1,14 +1,13 @@
-
-import './App.css';
-import { DetailsPage } from './pages/DetailsPage';
-import { HomePage } from './pages/HomePage';
+import { GlobalStyle } from './GlobalStyle';
+import { DetailsPage } from './pages/DetailsPage/DetailsPage';
+import { HomePage } from './pages/HomePage/HomePage';
 
 function App() {
   return (
     <div className="App">
-      <h1>Rick and Morty</h1>
+      <GlobalStyle/>
       <HomePage/>
-      <DetailsPage/>
+      {/* <DetailsPage/> */}
     </div>
   );
 }

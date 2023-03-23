@@ -3,32 +3,26 @@ import { Header } from "../../components/Header/Header";
 import { HomePageContainer } from "./style";
 
 
-export function HomePage () {
+export function HomePage (props) {
+
+  const { results } = props
+
+  const renderList = results.map( character => {
+    return (
+        <Card
+          img={character.image}
+          name={character.name}
+          species={character.species}
+        />
+    )
+  })
+
   return(
     <HomePageContainer>
       <Header/>
 
       <main>
-        <Card
-          img={"https://rickandmortyapi.com/api/character/avatar/1.jpeg"}
-          name={"Rick Sanchez"}
-          species={"Human"}
-        />
-        <Card
-          img={"https://rickandmortyapi.com/api/character/avatar/2.jpeg"}
-          name={"Morty Smith"}
-          species={"Human"}
-        />
-        <Card
-          img={"https://rickandmortyapi.com/api/character/avatar/3.jpeg"}
-          name={"Summer Smith"}
-          species={"Human"}
-        />
-        <Card
-          img={"https://rickandmortyapi.com/api/character/avatar/13.jpeg"}
-          name={"Alien Googah"}
-          species={"Alien"}
-        />
+        {renderList}
       </main>
     </HomePageContainer>
   )  
